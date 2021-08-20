@@ -1,0 +1,15 @@
+black
+coverage
+mypy
+nox
+numpy
+pandas
+pdoc3
+pre-commit
+pylint
+pytest
+requests
+scalene
+tensorflow
+torch
+torchvision
