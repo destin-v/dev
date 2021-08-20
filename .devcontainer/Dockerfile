@@ -1,7 +1,7 @@
 #--------------------------------------------------------------
 # Name:     Anaconda Environment
 # Author:   William Li
-# Date:     8/20/2021
+# Date:     8/21/2021
 # 
 # Description:  
 #   Comes packaged with Anaconda along with basic
