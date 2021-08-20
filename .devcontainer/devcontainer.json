@@ -9,15 +9,15 @@
 	// Add arguments that run with the container
 	// These are arguments needed for GPU support on a Linux machine
 	"runArgs": [
-		"--net=host",
-		"--gpus",
-		"all",
-		"-v",
-		"/tmp/.X11-unix:/tmp/.X11-unix",
-		"-e",
-		"DISPLAY",
-		"--device",
-		"/dev/dri"
+		// "--net=host",
+		// "--gpus",
+		// "all",
+		// "-v",
+		// "/tmp/.X11-unix:/tmp/.X11-unix",
+		// "-e",
+		// "DISPLAY",
+		// "--device",
+		// "/dev/dri"
 	],
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},

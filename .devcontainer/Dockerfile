@@ -50,9 +50,9 @@ ARG PATH="/root/miniconda3/bin:${PATH}"
 
 # Source python versions: https://repo.anaconda.com/miniconda/
 RUN wget \
-    https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh \
+    https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh \
     && mkdir /root/.conda \
-    && bash Miniconda3-py39_4.9.2-Linux-x86_64.sh -b \
-    && rm -f Miniconda3-py39_4.9.2-Linux-x86_64.sh 
+    && bash Miniconda3-py38_4.10.3-Linux-x86_64.sh -b \
+    && rm -f Miniconda3-py38_4.10.3-Linux-x86_64.sh 
 
 RUN pip3 install pre-commit
