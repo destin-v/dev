@@ -25,6 +25,9 @@
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}"
     },
+    "__terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}:${CUSTOM_PYTHON_DIR}"
+    },
     "___________________________Plugins___________________________": "",
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black",
