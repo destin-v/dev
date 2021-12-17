@@ -1,47 +1,50 @@
 {
-    "___________________________ Auto DocString ___________________________": "",
+    "comments.Description": "VsCode configuration designed to run Python",
+    "comments.Author": "William Li",
+    "comments.Date": "Dec-16-2021",
+    "___________________________DocString___________________________": "",
     "autoDocstring.docstringFormat": "google",
     "autoDocstring.generateDocstringOnEnter": true,
     "autoDocstring.guessTypes": true,
     "autoDocstring.includeExtendedSummary": false,
-    "___________________________ Font Sizing ___________________________": "",
+    "___________________________Fonts___________________________": "",
     "debug.console.fontSize": 11.5,
     "editor.fontSize": 11.5,
     "editor.formatOnSave": true,
     "terminal.integrated.fontSize": 11.5,
     "markdown.preview.fontSize": 14.5,
-    "___________________________ Rulers ___________________________": "",
+    "___________________________Rulers___________________________": "",
     "editor.rulers": [
         90
     ],
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 90,
-    "___________________________ Configs ___________________________": "",
+    "___________________________Configs___________________________": "",
     "python.envFile": "${workspaceFolder}/.vscode/.env",
     "python.pythonPath": "",
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}"
     },
-    "___________________________ Plugins ___________________________": "",
+    "___________________________Plugins___________________________": "",
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
-    "___________________________ Linting ___________________________": "",
+    "___________________________Linting___________________________": "",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "python.linting.pylintArgs": [
         "--disable=F0401"
     ],
-    "___________________________ Testing ___________________________": "",
+    "___________________________Testing___________________________": "",
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [
         "."
     ],
     "python.testing.unittestEnabled": true,
-    "___________________________ Themes ___________________________": "",
+    "___________________________Themes___________________________": "",
     "workbench.colorTheme": "Visual Studio Light",
-    "___________________________ Ignore ___________________________": "",
+    "___________________________Misc___________________________": "",
     "files.exclude": {
         "**/.DS_Store": true, // this is a default value
     },
