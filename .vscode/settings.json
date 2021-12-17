@@ -1,34 +1,48 @@
 {
-    "autoDocstring.docstringFormat": "numpy",
+    "___________________________ Auto DocString ___________________________": "",
+    "autoDocstring.docstringFormat": "google",
     "autoDocstring.generateDocstringOnEnter": true,
     "autoDocstring.guessTypes": true,
-    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.includeExtendedSummary": false,
+    "___________________________ Font Sizing ___________________________": "",
     "debug.console.fontSize": 11.5,
     "editor.fontSize": 11.5,
     "editor.formatOnSave": true,
+    "terminal.integrated.fontSize": 11.5,
+    "markdown.preview.fontSize": 14.5,
+    "___________________________ Rulers ___________________________": "",
     "editor.rulers": [
         90
     ],
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 90,
-    "files.exclude": {
-        "**/.DS_Store": true, // this is a default value
+    "___________________________ Configs ___________________________": "",
+    "python.envFile": "${workspaceFolder}/.vscode/.env",
+    "python.pythonPath": "",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}"
     },
-    "markdown.preview.fontSize": 14.5,
+    "___________________________ Plugins ___________________________": "",
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
+    "___________________________ Linting ___________________________": "",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
-    "python.linting.pylintPath": "/Users/willli/anaconda3/envs/$PROJECT_DIR/bin/flake8",
-    "python.pythonPath": "/Users/willli/anaconda3/envs/$PROJECT_DIR/bin/python",
+    "python.linting.pylintArgs": [
+        "--disable=F0401"
+    ],
+    "___________________________ Testing ___________________________": "",
+    "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [
         "."
     ],
-    "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": true,
-    "telemetry.enableCrashReporter": false,
-    "terminal.integrated.fontSize": 11.5,
+    "___________________________ Themes ___________________________": "",
     "workbench.colorTheme": "Visual Studio Light",
+    "___________________________ Ignore ___________________________": "",
+    "files.exclude": {
+        "**/.DS_Store": true, // this is a default value
+    },
 }
