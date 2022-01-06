@@ -22,6 +22,7 @@
 #--------------------------------------------------------------
 
 # Source Image (this should match the CUDA version on the host)
+# FROM nvidia/cuda:10.2-base-ubuntu18.04
 FROM nvidia/cuda:11.4.1-base-ubuntu20.04
 
 # Labels
