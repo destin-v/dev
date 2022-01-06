@@ -1,7 +1,7 @@
 #--------------------------------------------------------------
 # Name:     Anaconda Environment
 # Author:   William Li
-# Date:     8/21/2021
+# Date:     1/6/2021
 # 
 # Description:  
 #   Comes packaged with Anaconda along with basic
@@ -45,6 +45,16 @@ RUN apt-get install -y --no-install-recommends \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
+# Setup shell
+RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
+    -t robbyrussell \
+    -p git -p ssh-agent -p 'history-substring-search' \
+    -a 'bindkey "\$terminfo[kcuu1]" history-substring-search-up' \
+    -a 'bindkey "\$terminfo[kcud1]" history-substring-search-down'
+
+# Setup Shell
+SHELL ["/bin/zsh", "-c"]
+
 # Miniconda requires that the path point to its python binary
 ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
@@ -56,4 +66,18 @@ RUN wget \
     && bash Miniconda3-py38_4.10.3-Linux-x86_64.sh -b \
     && rm -f Miniconda3-py38_4.10.3-Linux-x86_64.sh 
 
-RUN pip3 install pre-commit
+RUN conda init zsh
+
+# Setup working directory
+WORKDIR /projects
+
+# Copy folder/files into container (must be within context directory)
+# Process: local files -> artifact dir -> container dir
+# COPY <local_path> <container_path>
+
+# Dependencies
+RUN pip install pre-commit
+
+# Environment
+ENV SHELL /bin/zsh
+ENV PYTHONPATH /directory1:/directory2
