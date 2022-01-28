@@ -10,8 +10,9 @@
 	// These are arguments needed for GPU support on a Linux machine
 	"runArgs": [
 		// "--net=host",
-		// "--gpus",
-		// "all",
+		// "-m=10g",
+		// "--shm-size=10g",
+		// "--gpus=all",
 		// "-v",
 		// "/tmp/.X11-unix:/tmp/.X11-unix",
 		// "-e",
